@@ -1,5 +1,5 @@
 header {
-    background: #1044a3;
+    background: var(--primary-color);
     min-height: 100px;
 }
 
