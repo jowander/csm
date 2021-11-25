@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Montserrat:wght@200;300&family=Outfit:wght@100;200&display=swap');
+
+*,::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #1044a3;
+    --secondary-color: #f08426;
+    --bg-color: #feffed;
+    --black-color: #000;
+    --light-blue-color: #6ea5ff;
+    --font: 'Montserrat', sans-serif;
+}
+/*GLOBAL-STYLES*/
+body{
+    background-color: var(--bg-color);
+}
+
+.logo {
+    font-family: baumans;
+    font-size: 36px;
+}
+
+.logo span {
+    font-size: 52px;
+}
+
+
+
+.navigation a {
+    color: var(--secondary-color);
+}

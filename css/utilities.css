@@ -1,0 +1,102 @@
+.lg {
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.md {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.sm {
+    font-size: 20px;
+}
+
+.btn {
+    background-color: var(--secondary-color);
+    color: var(--black-color);
+    font-size: 16px;
+    padding : 5px 30px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--black-color);
+    color: var(--secondary-color);
+    font-size: 16px;
+    padding : 5px 30px;
+    text-decoration: none;
+    transition: 300ms ease-out;
+    cursor: pointer;
+}
+
+/*HAMBURGER-MENU*/
+nav, #hamburger-menu {
+    display: none;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    display: block;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.current {
+    font-weight: bold;
+}
+
+.hamburger-label {
+    float: right;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.5em;
+    display: block;
+}
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+
+/*HAMBURGER-LINES*/
+div#hamburger {
+    height: 25px;
+    width: 25px;
+    margin-top: 20px;
+}
+
+div#line1 {
+    height: 5px;
+    width: 25px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+div#line2 {
+    height: 5px;
+    width: 25px;
+    background-color: black;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+div#line3 {
+    height: 5px;
+    width: 25px;
+    background-color: black;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
