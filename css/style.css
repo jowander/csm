@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Baumans&family=Montserrat:wght@200;300&family=Outfit:wght@100;200&display=swap");
 
 *,
-::before,
-::after {
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -33,13 +33,26 @@ h1 {
     margin: 80px auto;
 }
 
+h2 {
+    text-align: center;
+    margin: 40px 0;
+}
+
 a {
     text-decoration: none;
     color: var(--black-color);
+    display: block;
 }
 
 img {
     display: block;
+    margin: 20px 0;
+}
+
+p {
+    text-align: left;
+    line-height: 1.5;
+    margin: 20px 0;
 }
 
 nav,
@@ -81,10 +94,6 @@ nav a:hover {
     color: var(--secondary-color);
 }
 
-.logo a {
-    color: var(--bg-color);
-}
-
 .navigation a {
     color: var(--secondary-color);
 }
@@ -92,12 +101,57 @@ nav a:hover {
 /*HOME-PAGE*/
 .showcase {
     max-width: 1630px;
-    height: 688px;
     margin: 40px auto;
 }
 
 .showcase img {
     width: 100%;
+}
+
+.home-box {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.hours p {
+    text-align: center;
+}
+
+.hours h3 {
+    text-align: center;
+}
+
+ .hours h2, p {
+    width: 100%;
+} 
+
+.kids img {
+    width: 100%;
+}
+
+.adults img {
+    width: 100%;
+}
+
+/*FOOTER*/
+footer {
+    background-color: var(--primary-color);
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.contact-info {
+    margin: 0 auto;
+}
+
+.contact-info p {
+    text-align: center;
+}
+
+.copyright p {
+    text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -178,5 +232,43 @@ nav a:hover {
     .navigation {
         display: flex;
         justify-content: flex-end;
+    }
+    /*HOME-PAGE*/
+    .museum-offers {
+        display: flex;
+        justify-content: space-evenly;
+        flex: wrap;
+        text-align: center;
+    }
+
+    .home-box {
+        flex: 1;
+    }
+
+    /*FOOTER*/
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "footer-logo social-btn contact-info"
+        "copyright copyright copyright";
+    }
+
+    .footer-logo {
+        grid-area: footer-logo;
+        justify-self: start;
+    }
+    
+    .contact-info {
+        grid-area: contact-info;
+    }
+
+    .social-btn {
+        grid-area: social-btn;
+        justify-self: end;
+    }
+
+    .copyright {
+        grid-area: copyright;
     }
 }
