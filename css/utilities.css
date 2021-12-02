@@ -1,14 +1,14 @@
-.lg {
+.large-txt {
     font-size: 52px;
     font-weight: bold;
 }
 
-.md {
+.medeum-txt {
     font-size: 40px;
     font-weight: bold;
 }
 
-.sm {
+.small-txt {
     font-size: 20px;
 }
 
@@ -31,72 +31,7 @@
     cursor: pointer;
 }
 
-/*HAMBURGER-MENU*/
-nav, #hamburger-menu {
-    display: none;
-}
-
-nav ul {
-    padding: 0;
-}
-
-nav li {
-    display: block;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px;
-    display: block;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
 .current {
     font-weight: bold;
+    text-shadow: 2px 2px 8px var(--secondary-color);
 }
-
-.hamburger-label {
-    float: right;
-    color: #fff;
-    padding: 10px;
-    font-size: 1.5em;
-    display: block;
-}
-#hamburger-menu:checked ~ nav {
-    display: block;
-}
-
-/*HAMBURGER-LINES*/
-div#hamburger {
-    height: 25px;
-    width: 25px;
-    margin-top: 20px;
-}
-
-div#line1 {
-    height: 5px;
-    width: 25px;
-    background-color: black;
-    border-radius: 10px;
-}
-
-div#line2 {
-    height: 5px;
-    width: 25px;
-    background-color: black;
-    margin-top: 5px;
-    border-radius: 10px;
-}
-
-div#line3 {
-    height: 5px;
-    width: 25px;
-    background-color: black;
-    margin-top: 5px;
-    border-radius: 10px;
-}
-
