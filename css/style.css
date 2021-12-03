@@ -46,7 +46,6 @@ a {
 
 img {
     display: block;
-    margin: 20px 0;
 }
 
 p {
@@ -81,6 +80,7 @@ nav a:hover {
     font-weight: bold;
     text-decoration: none;
     text-shadow: 2px 2px 8px var(--secondary-color);
+    transform: scale(1.2);
     transition: 150ms ease-in;
 }
 
@@ -94,7 +94,7 @@ nav a:hover {
     color: var(--secondary-color);
 }
 
-.navigation a {
+.hyper-links a {
     color: var(--secondary-color);
 }
 
@@ -159,8 +159,8 @@ nav  {
 
 /*HOME-PAGE*/
 .showcase {
-    max-width: 1630px;
-    margin: 40px auto;
+    max-width: 1600px;
+    margin: 80px auto;
 }
 
 .showcase img {
@@ -168,9 +168,13 @@ nav  {
     height: auto;
 }
 
-.home-box {
+.museum-offers {
+    margin: 0 20px;
+} 
+
+.home-page-box {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 80px auto;
 }
 
 .hours p {
@@ -202,10 +206,11 @@ footer {
 
 .footer-logo {
     text-align: center;
+    margin: 50px auto;
 }
 
 .contact-info {
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 .contact-info p {
@@ -214,6 +219,7 @@ footer {
 
 .copyright p {
     text-align: center;
+    margin-top: 50px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -239,7 +245,7 @@ footer {
         display: none;
     }
 
-    .navigation {
+    .hyper-links {
         display: flex;
         justify-content: flex-end;
     }
@@ -250,6 +256,7 @@ footer {
         justify-content: space-evenly;
         flex: wrap;
         text-align: center;
+        margin: 100px auto;
     }
 
     .home-page-box {
@@ -269,6 +276,7 @@ footer {
     .footer-logo {
         grid-area: footer-logo;
         justify-self: start;
+        margin-left: 20px;
     }
     
     .contact-info {
@@ -278,6 +286,7 @@ footer {
     .social-btn {
         grid-area: social-btn;
         justify-self: end;
+        margin-top: 50px;
     }
 
     .copyright {
