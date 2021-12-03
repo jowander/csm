@@ -98,6 +98,65 @@ nav a:hover {
     color: var(--secondary-color);
 }
 
+/*HAMBURGER-MENU*/
+#hamburger-menu:checked ~ .hamburger-label > span {
+    transform: rotate(45deg);
+}
+
+#hamburger-menu:checked ~ .hamburger-label > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#hamburger-menu:checked ~ .hamburger-label > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+nav  {
+    display: block;
+    transition: 300ms ease;
+} 
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+    opacity: 1;
+    transform: translateX(0); 
+}
+
+.hamburger-label {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.hamburger-label > span,
+.hamburger-label > span::before,
+.hamburger-label > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--bg-color);
+    transition-duration: 250ms;
+}
+
+.hamburger-label > span::before {
+    content: "";
+    top: -8px;
+}
+
+.hamburger-label > span::after {
+    content: "";
+    top: 8px;
+}
+
 /*HOME-PAGE*/
 .showcase {
     max-width: 1630px;
@@ -106,6 +165,7 @@ nav a:hover {
 
 .showcase img {
     width: 100%;
+    height: auto;
 }
 
 .home-box {
@@ -127,10 +187,12 @@ nav a:hover {
 
 .kids img {
     width: 100%;
+    height: auto;
 }
 
 .adults img {
     width: 100%;
+    height: auto;
 }
 
 /*FOOTER*/
@@ -155,67 +217,10 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-    /*HAMBURGER-MENU*/
-    #hamburger-menu:checked ~ .hamburger-label > span {
-        transform: rotate(45deg);
-    }
-
-    #hamburger-menu:checked ~ .hamburger-label > span::before {
-        top: 0;
-        transform: rotate(0);
-    }
-
-    #hamburger-menu:checked ~ .hamburger-label > span::after {
-        top: 0;
-        transform: rotate(90deg);
-    }
-
-     nav  {
-        display: block;
+    nav {
         transform: translateX(-500px);
-        transition: 300ms ease;
-    } 
-
-    #hamburger-menu:checked ~ nav {
-        display: block;
-        opacity: 1;
-        transform: translateX(0);
-        
     }
-
-    .hamburger-label {
-        display: flex;
-        align-items: center;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        width: 26px;
-        height: 26px;
-        cursor: pointer;
-        z-index: 1;
-    }
-
-    .hamburger-label > span,
-    .hamburger-label > span::before,
-    .hamburger-label > span::after {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 3px;
-        background-color: var(--bg-color);
-        transition-duration: 250ms;
-    }
-
-    .hamburger-label > span::before {
-        content: "";
-        top: -8px;
-    }
-
-    .hamburger-label > span::after {
-        content: "";
-        top: 8px;
-    }
-}
+} 
 
 @media only screen and (min-width: 769px) {
     header {
@@ -229,10 +234,16 @@ footer {
         margin-right: 10rem;
     }
 
+    .hamburger-label,
+    #hamburger-menu {
+        display: none;
+    }
+
     .navigation {
         display: flex;
         justify-content: flex-end;
     }
+
     /*HOME-PAGE*/
     .museum-offers {
         display: flex;
@@ -241,8 +252,9 @@ footer {
         text-align: center;
     }
 
-    .home-box {
+    .home-page-box {
         flex: 1;
+        margin: 0 20px;
     }
 
     /*FOOTER*/
