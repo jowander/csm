@@ -44,5 +44,4 @@
 .current {
     font-weight: bold;
     text-shadow: 2px 2px 8px var(--secondary-color);
-    transform: scale(1.2);
 }
