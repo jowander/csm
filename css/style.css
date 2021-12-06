@@ -210,6 +210,81 @@ nav  {
     height: auto;
 }
 
+/*ABOUT-PAGE*/
+.about-top-section {
+    margin: 20px auto;
+}
+
+.about-top-section-left {
+    max-width: 1000px;
+    margin: 20px 20px;
+}
+
+.about-top-section-left img {
+    width: 100%;
+    height: auto;
+}
+
+.about-top-section-right {
+    max-width: 800px;
+    margin: 20px 20px;
+}
+
+.about-top-section-right img {
+    width: 100%;
+    height: auto;
+}
+
+.about-middle-section-left {
+    max-width: 1000px;
+    margin: 20px 20px;
+}
+
+.about-middle-section-left img {
+    width: 100%;
+    height: auto;
+}
+
+.about-middle-section-right {
+    max-width: 1000px;
+    margin: 20px 20px;
+}
+
+.about-middle-section-right img {
+    width: 100%;
+    height: auto;
+}
+
+.about-bottom-section-left {
+    max-width: 1000px;
+    margin: 20px 20px;
+}
+
+.about-bottom-section-left img {
+    width: 100%;
+    height: auto;
+}
+
+.about-bottom-section-center {
+    max-width: 1000px;
+    margin: 20px 20px;
+}
+
+.about-bottom-section-center img {
+    width: 100%;
+    height: auto;
+}
+
+.about-bottom-section-right {
+    max-width: 1000px;
+    margin: 20px 20px;
+}
+
+.about-bottom-section-right img {
+    width: 100%;
+    height: auto;
+}
+
 /*FOOTER*/
 footer {
     background-color: var(--primary-color);
@@ -272,6 +347,53 @@ header{
     .home-page-box {
         flex: 1;
         margin: 0 20px;
+    }
+
+    /*ABOUT-PAGE*/
+    .about-top-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "about-header about-header about-header"
+        "about-top-section-left about-top-section-left about-top-section-right"
+        "about-middle-section-left about-middle-section-right about-middle-section-right"
+        "about-bottom-section-left about-bottom-section-center about-bottom-section-right";
+    }
+
+    .about-header {
+        grid-area: about-header;
+    }
+
+    .about-top-section-left {
+        grid-area: about-top-section-left;
+    }
+
+    .about-top-section-right p {
+        grid-area: about-top-section-right-p;
+    }
+
+    .about-top-section-right {
+        grid-area: about-top-section-right;
+    }
+
+    .about-middle-section-left {
+        grid-area: about-middle-section-left;
+    }
+
+    .about-middle-section-right {
+        grid-area: about-middle-section-right;
+    }
+
+    .about-bottom-section-left {
+        grid-area: about-bottom-section-left;
+    }
+
+    .about-bottom-section-center {
+        grid-area: about-bottom-section-center;
+    }
+
+    .about-bottom-section-right {
+        grid-area: about-bottom-section-right;
     }
 
     /*FOOTER*/
