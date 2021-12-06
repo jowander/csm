@@ -45,3 +45,9 @@
     font-weight: bold;
     text-shadow: 2px 2px 8px var(--secondary-color);
 }
+
+.img-container {
+    width: 100%;
+    height: auto;
+    /* box-shadow: 2px 2px 10px; */
+}

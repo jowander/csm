@@ -174,11 +174,6 @@ nav  {
     margin: 80px auto;
 }
 
-.showcase img {
-    width: 100%;
-    height: auto;
-}
-
 .museum-offers {
     margin: 0 20px;
 } 
@@ -198,16 +193,6 @@ nav  {
 
  .hours h2, p {
     width: 100%;
-} 
-
-.kids img {
-    width: 100%;
-    height: auto;
-}
-
-.adults img {
-    width: 100%;
-    height: auto;
 }
 
 /*ABOUT-PAGE*/
@@ -218,11 +203,6 @@ nav  {
 .about-top-section-left {
     max-width: 1000px;
     margin: 20px 20px;
-}
-
-.about-top-section-left img {
-    width: 100%;
-    height: auto;
 }
 
 .about-top-section-right {
@@ -240,19 +220,9 @@ nav  {
     margin: 20px 20px;
 }
 
-.about-middle-section-left img {
-    width: 100%;
-    height: auto;
-}
-
 .about-middle-section-right {
     max-width: 1000px;
     margin: 20px 20px;
-}
-
-.about-middle-section-right img {
-    width: 100%;
-    height: auto;
 }
 
 .about-bottom-section-left {
@@ -260,29 +230,14 @@ nav  {
     margin: 20px 20px;
 }
 
-.about-bottom-section-left img {
-    width: 100%;
-    height: auto;
-}
-
 .about-bottom-section-center {
     max-width: 1000px;
     margin: 20px 20px;
 }
 
-.about-bottom-section-center img {
-    width: 100%;
-    height: auto;
-}
-
 .about-bottom-section-right {
     max-width: 1000px;
     margin: 20px 20px;
-}
-
-.about-bottom-section-right img {
-    width: 100%;
-    height: auto;
 }
 
 /*FOOTER*/
