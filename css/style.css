@@ -27,7 +27,8 @@ body {
 
 header {
     background: var(--primary-color);
-    min-height: 100px;
+    height: 200px;
+
 }
 
 h1 {
@@ -202,42 +203,44 @@ nav  {
 
 .about-top-section-left {
     max-width: 1000px;
-    margin: 20px 20px;
 }
 
 .about-top-section-right {
     max-width: 800px;
-    margin: 20px 20px;
-}
-
-.about-top-section-right img {
-    width: 100%;
-    height: auto;
 }
 
 .about-middle-section-left {
     max-width: 1000px;
-    margin: 20px 20px;
 }
 
 .about-middle-section-right {
     max-width: 1000px;
-    margin: 20px 20px;
+    justify-self: flex-end;
 }
 
 .about-bottom-section-left {
     max-width: 1000px;
-    margin: 20px 20px;
 }
 
 .about-bottom-section-center {
-    max-width: 1000px;
-    margin: 20px 20px;
+    max-width: 667px;
 }
 
 .about-bottom-section-right {
     max-width: 1000px;
-    margin: 20px 20px;
+}
+
+/*EVENT-PAGE*/
+.event-page-left{
+    max-width: 1000px;
+}
+
+.event-page-center{
+    max-width: 1000px;
+}
+
+.event-page-right{
+    max-width: 659px;
 }
 
 /*FOOTER*/
@@ -263,11 +266,34 @@ footer {
     margin-top: 50px;
 }
 
-header{
-    height: 200px;
+.news-letter {
+    max-width: 250px;
+    margin: 50px auto;
+    position: relative;
+    box-shadow: 5px 5px 10px;
 }
 
-@media only screen and (min-width: 769px) {
+.news-btn {
+    background-color: var(--secondary-color);
+    padding: 5px 10px;
+    width: 40%;
+    font-size: 16px;
+    font-family: var(--font);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.news-input {
+    position: absolute;
+    width: 60%;
+    height: 48px;
+    margin: 0 10px 0 0;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
     header {
         display: flex;
         justify-content: space-between;
@@ -323,10 +349,6 @@ header{
         grid-area: about-top-section-left;
     }
 
-    .about-top-section-right p {
-        grid-area: about-top-section-right-p;
-    }
-
     .about-top-section-right {
         grid-area: about-top-section-right;
     }
@@ -349,6 +371,15 @@ header{
 
     .about-bottom-section-right {
         grid-area: about-bottom-section-right;
+    }
+
+    /*EVENT-PAGE*/
+    .event-page {
+        display: flex;
+    }
+
+    .event-page-box {
+        flex: 1;
     }
 
     /*FOOTER*/
@@ -374,7 +405,6 @@ header{
 
     .social-btn {
         grid-area: social-btn;
-        justify-self: end;
         margin-top: 50px;
     }
 
