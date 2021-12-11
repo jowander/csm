@@ -57,6 +57,10 @@ p {
     margin: 20px 0;
 }
 
+ul {
+    list-style: none;
+}
+
 nav,
 #hamburger-menu {
     display: none;
@@ -102,6 +106,12 @@ nav a:hover {
 }
 
 /*HAMBURGER-MENU*/
+nav  {
+    display: block;
+    transition: 300ms ease;
+    transform: translateX(-750px);
+}
+
 #hamburger-menu:checked ~ .hamburger-label > span {
     transform: rotate(45deg);
 }
@@ -114,12 +124,6 @@ nav a:hover {
 #hamburger-menu:checked ~ .hamburger-label > span::after {
     top: 0;
     transform: rotate(90deg);
-}
-
-nav  {
-    display: block;
-    transition: 300ms ease;
-    transform: translateX(-750px);
 }
 
 #hamburger-menu:checked ~ nav {
@@ -241,6 +245,43 @@ nav  {
 
 .event-page-right{
     max-width: 659px;
+}
+
+/*EXHIBITION*/
+.exhibition-page-top-left {
+    max-width: 800px;
+}
+
+.exhibition-page-top-right {
+    max-width: 667px;
+}
+
+.exhibition-page-bottom {
+    max-width: 1000px;
+}
+
+/*BOOK-PAGE*/
+form ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.form-input {
+    width: 250px;
+    height: 30px;
+    margin: 20px auto;
+}
+
+.date {
+    text-align: center;
+}
+
+select {
+    width: 250px;
+    height: 30px;
+    margin: 20px auto;
+    text-align: right;
 }
 
 /*FOOTER*/
@@ -380,6 +421,43 @@ footer {
 
     .event-page-box {
         flex: 1;
+    }
+    
+    /*EXHIBITION-PAGE*/
+    .exhibition-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "exhibition-header exhibition-header"
+        "exhibition-page-bottom exhibition-page-bottom"
+        "exhibition-page-top-left exhibition-page-top-right";
+    }
+
+    .exhibition-header {
+        grid-area: exhibition-header;
+    }
+
+    .exhibition-page-top-left {
+        grid-area: exhibition-page-top-left;
+        justify-self: center;
+        flex: 1;
+    }
+
+    .exhibition-page-top-right {
+        grid-area: exhibition-page-top-right;
+        justify-self: center;
+        flex: 1;
+    }
+
+    .exhibition-page-bottom {
+        grid-area: exhibition-page-bottom;
+        justify-self: center;
+    }
+
+    /*BOOK-PAGE*/
+    .book-page {
+        display: flex;
+        justify-content: space-evenly;
     }
 
     /*FOOTER*/
