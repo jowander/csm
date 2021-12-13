@@ -110,3 +110,35 @@
 .margin-container{
     margin: 100px 20px;
 }
+
+:focus {
+    outline: 0.5rem solid darkgray;
+    transform: scale(1.2);
+}
+
+.footer-btn:focus {
+    outline: 0.5rem solid yellow;
+}
+
+button:focus {
+    outline: 0.5rem solid var(--bg-color);
+}
+
+@supports selector(:focus-visible) {
+    :focus:not(:focus-visible) {
+        outline: none;
+    }
+    
+    .footer-btn:focus-visible {
+        outline: 0.3rem solid var(--bg-color);
+    }
+
+    button:focus-visible {
+        outline: 0.3rem solid var(--bg-color);
+    }
+    
+    :focus-visible {
+        outline: 0.3rem solid var(--black-color);
+        transform: scale(1.1);
+    }
+}

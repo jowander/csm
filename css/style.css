@@ -284,6 +284,17 @@ select {
     text-align: right;
 }
 
+/*CONFIRMATION-PAGE*/
+.booked-info {
+    max-width: 300px;
+    margin: 50px 20px;
+}
+
+.thank-you {
+    max-width: 300px;
+    margin: 50px 20px;
+}
+
 /*FOOTER*/
 footer {
     background-color: var(--primary-color);
@@ -456,6 +467,12 @@ footer {
 
     /*BOOK-PAGE*/
     .book-page {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /*COMFIRMATION-PAGE*/
+    .booked {
         display: flex;
         justify-content: space-evenly;
     }
